@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  padding: 2rem;
+}
+main .left {
+  height: 100%;
+  width: 30%;
+  margin: 0 1rem;
+  position: relative;
+  border-radius: 1rem;
+}
+main .left .text {
+  color: white;
+  text-transform: capitalize;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .left .text h1 {
+  font-size: 4rem;
+  animation: text 1s infinite alternate-reverse;
+}
+@keyframes text {
+  0% {
+    font-size: 2rem;
+  }
+  100% {
+    width: 4rem;
+  }
+}
+main .left .text p {
+  margin-bottom: 2rem;
+}
+main .left .text a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+main .left .text a:hover {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px black;
+}
+main .right {
+  height: 100%;
+  width: 70%;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .right .right_top {
+  height: 50%;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+}
+main .right .right_top .right_top_left {
+  height: 100%;
+  width: 50%;
+  background: url(/img/Ice\ cream\ -\ LimeWire.jfif);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+main .right .right_top .right_top_left:hover {
+  transform: scale(1.1);
+  transform: rotate(-36deg);
+  z-index: 2;
+}
+main .right .right_top .right_top_right {
+  height: 100%;
+  width: 50%;
+  background: url(/img/ice\ cream\ 2.jfif);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+main .right .right_top .right_top_right:hover {
+  transform: scale(1.1);
+  transform: rotate(36deg);
+  z-index: 3;
+}
+main .right .right_buttom {
+  height: 50%;
+  width: 100%;
+  background: url(/img/ice\ cream.jfif);
+  background-size: cover;
+  background-position: top;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+main .right .right_buttom:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */
